@@ -1,13 +1,13 @@
 import { ADD_FLASH_MESSAGE } from '../actions/types'
-import shortId from 'shortid'
+import shortid from 'shortid'
 
-export default (state = [], action ={}) => {
+export default (state = [], action = {}) => {
   switch (action.type) {
     case ADD_FLASH_MESSAGE:
       return [
         ...state,
         {
-          id: shortId.generate(),
+          id: shortid.generate(),
           type: action.message.type,
           text: action.message.text
         }
