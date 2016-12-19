@@ -19,7 +19,6 @@ export default {
   module: {
     loaders: [
       {
-        test: /\.js$/,
         include: [
           path.join(__dirname, 'client'),
           path.join(__dirname, 'server/shared')
