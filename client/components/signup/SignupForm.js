@@ -54,7 +54,7 @@ class SignupForm extends React.Component {
       return (
         <option key={timezones[val]} value={timezones[val]}>{val}</option>
       )
-    })﻿
+    })
     return (
       <form onSubmit={this.onSubmit}>
         <h1>Join our community!</h1>
